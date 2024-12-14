@@ -1,39 +1,48 @@
 <p>Clarusway<img align="right"
   src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# SSN (Social Security Number) Validator
+# TR Identity Number Validation
 
-The purpose of this coding challenge is to create a function that will check the given SSN (Social Security Number) is valid or not valid.
+Purpose of the this coding challenge is to write a code that given TR Identity Number, returns  valid or invalid.
 
-![SSN Validator](./ssn.gif)
+- Valid TR Identity Number must follow these rules:
+
+1. TR Identity Number actually consists of 9 digits, the last 2 digits have been added for control/verification purposes. 
+2. The ID number cannot start with 0. 
+3. The 10th digit is obtained by using the first 9 digits, and the 11th digit is obtained by using the first 10 digits.
+4. Add the digits in the 1st, 3rd, 5th, 7th and 9th digits, multiply by 7 and subtract the sum of the digits in the 2nd, 4th, 6th and 8th digits. 
+5. The units digit of the result obtained (mod 10) gives the 10th digit of the ID number.
+6. When we add the first 9 digits of the ID number and the 10th digit obtained by the above method, the ones digit (mod 10) gives the 11th digit.
+
+## Expected Outcome
+
+<img src="./id.gif" width="600" />
 
 ## Learning Outcomes
 
 At the end of the this coding challenge, students will be able to;
 
-- analyze a problem, identify and apply programming knowledge for appropriate solution.
+- Analyze a problem, identify and apply programming knowledge for appropriate solution.
 
-- demonstrate their knowledge of algorithmic design principles by using JavaScript effectively.
+- Demonstrate their knowledge of algorithmic design principles by using JavaScript effectively.
 
 ## Problem Statement
 
-Valid a SSN (Social Security Number);
+- Write a function that takes number variable and return `true` or `false` and write document `invalid` or `valid`.
 
-- should have 9 digits. `522-82-5151`
-- should be divided into 3 parts by hyphen (-).
-- The first part should have 3 digits and should not be 000, 666, or between 900 and 999.
-- The second part should have 2 digits and it should be from 01 to 99.
-- The third part should have 4 digits and it should be from 0001 to 9999.
+## Valid TR Identity Numbers for checking
 
-### Random Valid SSN numbers to check with your code:
+- Here are randomly generated valid ID numbers. You can use them to test your code.
 
-```plain text	
-268-26-3556
-237-86-7532
-304-92-5339
-510-72-0765
-504-58-0987
+```
+34444185856
+10880383988
+14702551364
+90091059698
+32413045316
+12835718432
+53963153566
+11111111110
 ```
 
 <p align='center'><strong> ⌛ Happy Coding  ✍ </strong></p>
-
