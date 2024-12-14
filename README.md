@@ -1,7 +1,7 @@
 <p>Clarusway<img align="right"
   src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# JS-CC-01 : SSN (Social Security Number) Validator
+# SSN (Social Security Number) Validator
 
 The purpose of this coding challenge is to create a function that will check the given SSN (Social Security Number) is valid or not valid.
 
